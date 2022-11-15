@@ -12,13 +12,13 @@
 // let a = '       Doraemon and Dorami are brother              '
 // console.log(a.replace(/a/g,"4").replace(/e/g,"3").replace(/i/g,"1").replace(/o/g,"0").replace(/s/g,"5").trimEnd().trimStart())
 // bài 3
-// function checkString(string) {
-//     if (string.length >= 3 && !string.includes('ing')) {
-//     console.log(`${string}ing`);
-//     } else if (string.includes('ing')) {
-//     console.log(`${string}ly`);
-//     } else if (string.length < 3) {
-//     console.log(string);
-//     }
-//     }
-//     checkString('swiming');
+function checkString(str) {
+    if (str.length >= 3 && str.slice(-3) !== 'ing') {
+    console.log(`${str}ing`);
+    } else if (str.slice(-3) === 'ing') {
+    console.log(`${str}ly`);
+    } else if (str.length < 3) {
+    console.log(str);
+    }
+    }
+    checkString('i am king zing.mp3');
